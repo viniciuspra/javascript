@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font: bold 1.3em arial;
+        }
+    </style>
+</head>
+<body>
+    <!-- Formatando strings
+
+        s.length - Quantos caracteres a string tem
+
+        s.toUpperCase() - Todas a letras para 'MAIÚSCULAS' 
+        
+        s.toLowerCase() -   Todas as letras para 'minúsculas' -->
+
+    <!-- Formatando numeros
+        
+        (n).toFixed(n) - quantas casa depois da virgula;
+
+        (n).replace('n', 'n') - trocar caracteres;
+
+        (n).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) - formatando em dinheiro 'BRl';
+
+         -->
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.writeln(`Olá ${nome}, seu nome tem ${nome.length} letras <br>`)
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()},<br>`)
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()},<br>`)
+    </script>
+</body>
+</html>
