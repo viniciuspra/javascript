@@ -7,14 +7,55 @@
     <title>Primeiros passos comDOM</title>
     <style>
         body {
-            background-color: #f2eee3;
-            font: 1em 'Roboto', sans-serif;
+            background-color: darkslategray;
+            font: normal 1em sans-serif;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScrit</p>
+    <div id="click">Clique em mim</div>
+    <script>
+        //Selecionado por Seclector - querySelector()
+            var e = window.document.querySelector('div#click')
+            e.style.color = 'red'
+            document.write(e.innerText)
+
+        //  Selecionando por Marca - getElementsByTagName()
+          /*
+             var a = window.document.getElementsByTagName('p')[0] 
+             window.document.write(a.innerText)
+             a.style.color = 'yellow'
+             var corpo = window.document.body
+             corpo.style.background = 'black'
+             document.write(a.innerHTML)
+          */
+
+        //  Selecionando por ID - getElementById()
+
+          /*
+            var b = window.document.getElementById('click')
+            document.write(b.innerText)
+            b.style.background = 'red'
+            b.innerText = 'Estou aguardando...'
+          */
+
+        // Selecionando por name - getElementsByName()
+          /*
+            var c = window.document.getElementsByName('click')[0]
+            c.innerText = 'Olá'
+          */
+         
+         // Selecionando por classe - getElementsByClassName()
+          /* 
+             var d = window.document.getElementsByClassName('click')[0]
+             d.innerText = 'Olá'
+          */
+
+
+    </script>
 </body>
 </html>
