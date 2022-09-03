@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 1em arial;
+            background-color: white;
+        }
+
+        div#box {
+            width: 400px;
+            height: 400px;
+            background-color: #05AFF2;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 2px 2px 8px #0000004e;
+            color: white;
+
+        }
+
+        h1 {
+            color: white;
+            padding: 30px 10px 10px 10px;
+            text-align: center;
+        }
+        
+        .caixa1, .caixa2{
+            width: 130px;
+            height: 30px;
+            border: none;
+            border-radius: 2px;
+            border-style: none;
+            outline: none;
+
+        }
+
+        .caixa1 {
+            margin-left: 61px;
+        }
+
+        .caixa1:hover, .caixa2:hover {
+            width: 132px;
+            height: 32px;
+            box-shadow: 1px 1px 8px #0583F2;
+            transition: 0.3s;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input#button {
+            display: block;
+            background-color: #0583F2;
+            border: none;
+            margin: 15px 10px 10px 61px;
+            width: 285px;
+            height: 30px;
+            color: white;
+        }
+
+        input#button:hover {
+            background-color: #0770cb;
+            transition: 0.4s;
+            box-shadow: 2px 2px 9px #0583F2;
+        }
+
+        div#res {
+            margin: 10px 10px 10px 196px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Somando Valores</h1>
+            <input class="caixa1" type="number" name="txtn2" id="txtn2" placeholder="Digite um número" required> +
+            <input class="caixa2" type="number" name="txtn1" id="txtn1" placeholder="Digite um número" required>
+                <div id="res"></div>
+        <input type="button" value="Somar" onclick="somar()" id="button">
+    </div>
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerText = s
+        }
+    </script>
+</body>
+</html>
