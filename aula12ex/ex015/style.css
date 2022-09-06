@@ -23,3 +23,40 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+#btn {
+    background-color: #323240;
+    width: 90px;
+    height: 35px;
+    padding: 6px;
+    align-items: flex-end;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.384);
+}
+
+#btn:hover {
+    background-color: #3a3a47;
+    transition: 0.3s;
+    transform: scale(0.95);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+input#txtano {
+    outline: none;
+}
+
+#txtano:hover {
+    transform: scale(0.99);
+    
+}
