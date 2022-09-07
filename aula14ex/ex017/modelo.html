@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <p>Número:
+                <input type="number" name="num" id="num">
+                <input type="button" value="Gerar Tabuada" onclick="contar()">
+            </p>
         </div>
-        <div>
-
+        <div id="res">
+                <select name="sel" id="sel" size="10">
+                    <option>Digite um número acima.</option>
+                </select>
         </div>
     </section>
     <footer>
         <p>&copy; Vinicius Cascaes</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
