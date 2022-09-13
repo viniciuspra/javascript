@@ -1,20 +1,10 @@
 function adicionar() {
     let num = document.getElementById('txtnum')
-    let tab = document.getElementById('sel')
-    let t = 
+    let array = []
     let n = Number(num.value)
-    for (let c = 0; c)
-    if (n < 1 || n > 100 || n.length == 0) {
-        alert('valor invalido')
+    if (num.value.length == 0 || n < 1 || n > 100) { 
+        alert('Valor invalido ou já encontrado na lista')
     }else {
-        let item = document.createElement('option')
-        item.text = `Valor ${n} adicionado`
-        tab.appendChild(item)
+        array.push(n)
     }
-    
-    let c = 0
-    let val[c] = n 
-    alert(val)
-    c++
-    console.log(val)
 }
