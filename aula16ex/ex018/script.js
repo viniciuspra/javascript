@@ -1,10 +1,31 @@
-function adicionar() {
-    let num = document.getElementById('txtnum')
-    let array = []
-    let n = Number(num.value)
-    if (num.value.length == 0 || n < 1 || n > 100) { 
-        alert('Valor invalido ou já encontrado na lista')
-    }else {
-        array.push(n)
+let num = document.getElementById('txtnum')
+let tab = document.getElementById('sel')
+let res = document.getElementById('res')
+let array = []
+
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true 
+    } else {
+        return false
     }
+}
+
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if (isNumero(num.value) && !inLista(num.value, array)) { 
+        array.push()
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado`
+    }else {
+        alert('Valor invalido ou já encontrado na lista')
+    }
+
 }
